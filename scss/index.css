@@ -1,0 +1,292 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  min-width: 153.6rem;
+  min-height: 75.44rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .pop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  min-height: 75.44rem;
+  background: #fff;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  background: #009688;
+  -webkit-box-shadow: inset 0 7px 35px white;
+          box-shadow: inset 0 7px 35px white;
+}
+
+body .pop .cell_data {
+  width: 33vw;
+  height: 33vw;
+  min-width: 50.688rem;
+  min-height: 50.688rem;
+  background: #fff176;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-shadow: 0 7px 35px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 7px 35px rgba(255, 255, 255, 0.5);
+  text-transform: capitalize;
+}
+
+body .pop .cell_data .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+body .pop .cell_data .state {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 5px 10px;
+  border: 4px solid #fff;
+  border-radius: 6px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+body .pop .cell_data .state:hover {
+  background: #fff;
+}
+
+body .pop .cell_data .valency {
+  width: 44rem;
+  border: 3px solid #009688;
+  border-radius: 3px;
+  -webkit-transition: background, color 0.3s linear;
+  transition: background, color 0.3s linear;
+}
+
+body .pop .cell_data .valency:hover {
+  color: #fff;
+  background: #009688;
+}
+
+body .pop .cell_data .configuration {
+  width: 44rem;
+  border: 3px solid #009688;
+  border-radius: 3px;
+  -webkit-transition: background, color 0.3s linear;
+  transition: background, color 0.3s linear;
+}
+
+body .pop .cell_data .configuration:hover {
+  color: #fff;
+  background: #009688;
+}
+
+body .pop .cell_data .location {
+  width: 44rem;
+  border: 3px solid #009688;
+  border-radius: 3px;
+  -webkit-transition: background, color 0.3s linear;
+  transition: background, color 0.3s linear;
+}
+
+body .pop .cell_data .location:hover {
+  color: #fff;
+  background: #009688;
+}
+
+body .pop .cell_data .shell {
+  width: 44rem;
+  border: 3px solid #009688;
+  border-radius: 3px;
+  -webkit-transition: background, color 0.3s linear;
+  transition: background, color 0.3s linear;
+}
+
+body .pop .cell_data .shell:hover {
+  color: #fff;
+  background: #009688;
+}
+
+body .pop .cell_data .block {
+  width: 44rem;
+  border: 3px solid #009688;
+  border-radius: 3px;
+  -webkit-transition: background, color 0.3s linear;
+  transition: background, color 0.3s linear;
+}
+
+body .pop .cell_data .block:hover {
+  background: #009688;
+  color: #fff;
+}
+
+body .pop button {
+  cursor: pointer;
+  padding: 0.3rem 1.2rem;
+  font-size: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+}
+
+body .pop .button {
+  cursor: pointer;
+  font-size: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  width: 3.5rem;
+  border-radius: 4px;
+  padding: 8px 7px;
+  background: yellow;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+body .pop .button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 1px 1px 5px grey;
+          box-shadow: 1px 1px 5px grey;
+}
+
+body main {
+  padding: 1rem 2rem;
+  min-width: 153.6rem;
+  min-height: 60.1rem;
+}
+
+body main .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .element {
+  width: 8.3rem;
+  height: 8.3rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-transform: capitalize;
+  font-weight: bold;
+  border: 0.1rem solid black;
+  font-size: 1.15rem;
+  padding: 1rem;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.1s ease;
+  transition: -webkit-transform 0.1s ease;
+  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+}
+
+body .element:hover {
+  -webkit-box-shadow: 0 2px 20px rgba(128, 128, 128, 0.8);
+          box-shadow: 0 2px 20px rgba(128, 128, 128, 0.8);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 127;
+}
+
+body .element h4 {
+  font-size: 1.5rem;
+}
+
+body .element h3 {
+  font-size: 1.2rem;
+}
+
+body .element h5 {
+  font-size: 1.3rem;
+}
+
+body .element .state {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.15rem;
+  background: #fff;
+  border: 0.1rem solid black;
+  width: 1.7rem;
+  height: 1.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=index.css.map */
